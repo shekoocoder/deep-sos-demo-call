@@ -19,9 +19,6 @@
     "express-less": "^0.1.0",
     "serve-favicon": "^2.4.5",
     "request": "^2.81.0",
-    "vehicle-manufacture-car-builder": "0.0.9",
-    "vehicle-manufacture-manufacturing": "0.0.9",
-    "vehicle-manufacture-vda": "0.0.9",
     "ws": "^2.3.1"
   }
 }
