@@ -8,7 +8,7 @@ module.exports = function (app) {
     app.use('/regulator/less/stylesheets/*', function (req, res, next) {
         var url = req.originalUrl;
         var relativePath = url.replace('regulator/less/stylesheets/', '');
-        var lessCSSFile = path.join('../../node_modules/vehicle-manufacture-vda/client', relativePath);
+        var lessCSSFile = path.join('../../utils/vehicle-manufacture-vda/client', relativePath);
         req.url = lessCSSFile;
         var expressLessObj = expressLess(__dirname, {
             compress: true,
