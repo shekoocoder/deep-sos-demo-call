@@ -1,0 +1,70 @@
+{
+  "_from": "vehicle-manufacture-vda@0.0.9",
+  "_id": "vehicle-manufacture-vda@0.0.9",
+  "_inBundle": false,
+  "_integrity": "sha512-oCFSZFnoFxvNLO8dW+b1voQiRpKZVO3PXDUShJ+lxqDjoA2arcJySjwoUn2R7IXqdyLfz8qPiR5p3C2jzwz+ig==",
+  "_location": "/vehicle-manufacture-vda",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "vehicle-manufacture-vda@0.0.9",
+    "name": "vehicle-manufacture-vda",
+    "escapedName": "vehicle-manufacture-vda",
+    "rawSpec": "0.0.9",
+    "saveSpec": null,
+    "fetchSpec": "0.0.9"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/vehicle-manufacture-vda/-/vehicle-manufacture-vda-0.0.9.tgz",
+  "_shasum": "c333c60a7c825a76e7a949b4d0f6694f46330cf1",
+  "_spec": "vehicle-manufacture-vda@0.0.9",
+  "_where": "/Users/shekoo/Desktop/submission/submit/deep-sos-demo-call/apps/vehicle-manufacture",
+  "author": {
+    "name": "Hyperledger Composer"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "cfenv": "^1.0.4",
+    "config": "^1.26.1",
+    "express": "^4.15.2",
+    "express-less": "^0.1.0",
+    "ws": "^2.3.1"
+  },
+  "deprecated": false,
+  "description": "Vehicle Lifecycle - A regulators view",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "license-check-and-add": "~2.3.0"
+  },
+  "license": "Apache-2.0",
+  "license-check-and-add-config": {
+    "folder": ".",
+    "license": "LICENSE.txt",
+    "exact_paths_method": "EXCLUDE",
+    "exact_paths": [
+      ".bowerrc",
+      "client/assets/fonts",
+      "client/bower_components",
+      "Dockerfile",
+      "node_modules"
+    ],
+    "file_type_method": "EXCLUDE",
+    "file_types": [
+      ".md"
+    ],
+    "insert_license": false
+  },
+  "main": "index.js",
+  "name": "vehicle-manufacture-vda",
+  "private": false,
+  "scripts": {
+    "licchk": "license-check-and-add",
+    "postinstall": "bower install",
+    "start": "node server/app.js",
+    "test": "npm run licchk"
+  },
+  "version": "0.0.9"
+}

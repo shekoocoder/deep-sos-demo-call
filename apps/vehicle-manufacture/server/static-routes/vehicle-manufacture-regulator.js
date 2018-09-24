@@ -3,7 +3,7 @@ var path = require('path');
 var expressLess = require('express-less');
 
 module.exports = function (app) {
-    app.use('/regulator', express.static(path.join(__dirname, '../../node_modules/vehicle-manufacture-vda', 'client')));
+    app.use('/regulator', express.static(path.join(__dirname, '../utils/vehicle-manufacture-vda', 'client')));
 
     app.use('/regulator/less/stylesheets/*', function (req, res, next) {
         var url = req.originalUrl;
