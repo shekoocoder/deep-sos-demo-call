@@ -1,0 +1,72 @@
+{
+  "_from": "vehicle-manufacture-manufacturing@0.0.9",
+  "_id": "vehicle-manufacture-manufacturing@0.0.9",
+  "_inBundle": false,
+  "_integrity": "sha512-zyU6o25LIalFYRaW9GdQe5W6pzkDwNUbO0FrfIaN5cTP5RCKXwu9tMmV+nll7zMcT6Y3WYOW7BLVCVdB0zN/7w==",
+  "_location": "/vehicle-manufacture-manufacturing",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "vehicle-manufacture-manufacturing@0.0.9",
+    "name": "vehicle-manufacture-manufacturing",
+    "escapedName": "vehicle-manufacture-manufacturing",
+    "rawSpec": "0.0.9",
+    "saveSpec": null,
+    "fetchSpec": "0.0.9"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/vehicle-manufacture-manufacturing/-/vehicle-manufacture-manufacturing-0.0.9.tgz",
+  "_shasum": "0e222bd897d69f220e90eaf26fc79f341529c4c9",
+  "_spec": "vehicle-manufacture-manufacturing@0.0.9",
+  "_where": "/Users/shekoo/Desktop/submission/submit/deep-sos-demo-call/apps/vehicle-manufacture",
+  "author": {
+    "name": "Hyperledger Composer"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cfenv": "^1.0.4",
+    "config": "^1.26.1",
+    "express": "^4.15.2",
+    "express-less": "^0.1.0",
+    "request": "^2.81.0",
+    "ws": "^2.3.1"
+  },
+  "deprecated": false,
+  "description": "Vehicle Lifecycle - A manufacturers view",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "license-check-and-add": "~2.3.0"
+  },
+  "license": "Apache-2.0",
+  "license-check-and-add-config": {
+    "folder": ".",
+    "license": "LICENSE.txt",
+    "exact_paths_method": "EXCLUDE",
+    "exact_paths": [
+      ".bowerrc",
+      "client/assets/fonts",
+      "client/bower_components",
+      "Dockerfile",
+      "node_modules"
+    ],
+    "file_type_method": "EXCLUDE",
+    "file_types": [
+      ".md"
+    ],
+    "insert_license": false
+  },
+  "main": "index.js",
+  "name": "vehicle-manufacture-manufacturing",
+  "private": false,
+  "scripts": {
+    "licchk": "license-check-and-add",
+    "postinstall": "bower install",
+    "start": "node server/app.js",
+    "test": "npm run licchk"
+  },
+  "version": "0.0.9"
+}

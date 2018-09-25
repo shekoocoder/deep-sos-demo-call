@@ -71,7 +71,7 @@ app.get('/assets/config.json', (req, res) => {
   })
 })
 
-var manufactureIndexHTML = fs.readFileSync(path.join(__dirname, '../node_modules/vehicle-manufacture-manufacturing/client/index.html')).toString().split('\n');
+var manufactureIndexHTML = fs.readFileSync(path.join(__dirname, '../utils/vehicle-manufacture-manufacturing/client/index.html')).toString().split('\n');
 manufactureIndexHTML.some((line, index) => {
   if(line.indexOf('<link') > -1) {
     manufactureIndexHTML.splice(index, 0, '<link rel="stylesheet" href="/custom-application-styles/manufacturer.css">');
@@ -80,7 +80,7 @@ manufactureIndexHTML.some((line, index) => {
 })
 manufactureIndexHTML = manufactureIndexHTML.join('\n');
 
-var regulatorIndexHTML = fs.readFileSync(path.join(__dirname, '../node_modules/vehicle-manufacture-vda/client/index.html')).toString().split('\n');
+var regulatorIndexHTML = fs.readFileSync(path.join(__dirname, '../utils/vehicle-manufacture-vda/client/index.html')).toString().split('\n');
 regulatorIndexHTML.some((line, index) => {
   if(line.indexOf('<link') > -1) {
     regulatorIndexHTML.splice(index, 0, '<link rel="stylesheet" href="/custom-application-styles/regulator.css">');
@@ -94,7 +94,7 @@ app.use('/tutorial', function (req, res) {
 });
 
 app.use('/car-builder', function (req, res) {
-  res.sendFile(path.join(__dirname, '../node_modules/vehicle-manufacture-car-builder/www', 'index.html'));
+  res.sendFile(path.join(__dirname, '../utils/vehicle-manufacture-car-builder/www', 'index.html'));
 });
 
 app.use('/manufacturer-dashboard', function (req, res) {
