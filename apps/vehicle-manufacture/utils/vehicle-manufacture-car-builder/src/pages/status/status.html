@@ -17,7 +17,7 @@ limitations under the License.
   <div class="header-background"></div>
 
   <ion-card class="order-header">
-    <h3>Order</h3>
+    <h3>SOS</h3>
     <h2><strong>Arium</strong> {{car.name}}</h2>
 
     <h5>#{{ orderId }}</h5>
@@ -28,7 +28,7 @@ limitations under the License.
       <img [hidden]="stage[0]" src="assets/circle_empty.svg">
       <img [hidden]="!stage[0]" src="assets/circle_tick.svg">
       <span>
-        Order Received
+        SOS Received
       </span>
       <span class="progress-selected">{{stage[0] | date:'dd/MM'}}</span>
     </h3>
@@ -41,7 +41,7 @@ limitations under the License.
       <img [hidden]="stage[1]" src="assets/circle_empty.svg">
       <img [hidden]="!stage[1]" src="assets/circle_tick.svg">
       <span>
-        Manufacture
+        Matching
       </span>
       <span class="progress-selected">{{stage[1]}}</span>
     </h3>
@@ -54,7 +54,7 @@ limitations under the License.
       <img [hidden]="stage[2]" src="assets/circle_empty.svg">
       <img [hidden]="!stage[2]" src="assets/circle_tick.svg">
       <span>
-        VIN Assigned
+        Agency Assigned
       </span>
       <span class="progress-selected">{{stage[2]}}</span>
     </h3>
@@ -67,7 +67,7 @@ limitations under the License.
       <img [hidden]="stage[3]" src="assets/circle_empty.svg">
       <img [hidden]="!stage[3]" src="assets/circle_tick.svg">
       <span>
-        Owner Issued
+        Responder Issued
       </span>
       <span class="progress-selected">{{stage[3]}}</span>
     </h3>
