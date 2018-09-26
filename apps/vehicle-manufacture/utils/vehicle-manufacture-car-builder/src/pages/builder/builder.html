@@ -21,10 +21,10 @@ limitations under the License.
     <h2><strong>Shelter</strong> {{car.name}}</h2>
     <div class="car-details">
       <p class="opaque">
-        5 people, All need medical attention
+       Select SOS
       </p>
       <p>
-        Task Worth : 3300 Coins
+         Task Prize is listed as Best Prize.
       </p>
     </div>
   </ion-card>
@@ -33,16 +33,18 @@ limitations under the License.
     <h3 class="car-option" (click)="open('trim')">
       <img [hidden]="states['trim']" src="assets/circle_empty.svg">
       <img [hidden]="!states['trim']" src="assets/circle_tick.svg">
-      Trim
+      Shelter <p>
+        Task Worth : 3300 Coins
+      </p>
       <span class="car-option-selected">{{states['trim']}}</span>
     </h3>
 
     <div>
       <div class="option-item top-option-item" (click)="select('trim', 'standard')">
         <div class="option-description">
-          <h2>Standard</h2>
+          <h2>Goverment</h2>
           <p>
-            A simple but elegant finishing trim for your Arium.
+            A simple shelter.
           </p>
         </div>
         <ion-badge [hidden]="states['trim'] === 'standard'" item-right color="dark">Free</ion-badge>
@@ -51,9 +53,9 @@ limitations under the License.
 
       <div class="option-item" (click)="select('trim', 'executive')">
         <div class="option-description">
-          <h2>Executive</h2>
+          <h2>Red Cross</h2>
           <p>
-            Sleek and aerodynamic tweaks to stand above the crowd.
+            Best supplied.
           </p>
         </div>
         <ion-badge [hidden]="states['trim'] === 'executive'" item-right color="dark">+£450</ion-badge>
@@ -66,39 +68,41 @@ limitations under the License.
     <h3 class="car-option" (click)="open('colour')">
       <img [hidden]="states['colour']" src="assets/circle_empty.svg">
       <img [hidden]="!states['colour']" src="assets/circle_tick.svg">
-      Colour
+      Medical <p>
+        Task Worth : 6600 Coins
+      </p>
       <span class="car-option-selected">{{states['colour']}}</span>
     </h3>
 
     <div class="option-colours">
       <div class="option-colour" (click)="select('colour', 'sunburst orange')" [ngClass]="{selected: states['colour'] === 'sunburst orange'}">
         <div class="option-colour-preview sunburst"></div>
-        <h4>Sunburst Orange</h4>
+        <h4>Emergency Doctor</h4>
       </div>
 
       <div class="option-colour" (click)="select('colour', 'inferno red')" [ngClass]="{selected: states['colour'] === 'inferno red'}">
         <div class="option-colour-preview red"></div>
-        <h4>Inferno Red</h4>
+        <h4>Nurse</h4>
       </div>
 
       <div class="option-colour" (click)="select('colour', 'royal purple')" [ngClass]="{selected: states['colour'] === 'royal purple'}">
         <div class="option-colour-preview purple"></div>
-        <h4>Royal Purple</h4>
+        <h4>Blood</h4>
       </div>
 
       <div class="option-colour" (click)="select('colour', 'alpine green')" [ngClass]="{selected: states['colour'] === 'alpine green'}">
         <div class="option-colour-preview green"></div>
-        <h4>Alpine Green</h4>
+        <h4>EMT</h4>
       </div>
 
       <div class="option-colour" (click)="select('colour', 'statement blue')" [ngClass]="{selected: states['colour'] === 'statement blue'}">
         <div class="option-colour-preview blue"></div>
-        <h4>Statement Blue</h4>
+        <h4>Ambulance</h4>
       </div>
 
       <div class="option-colour" (click)="select('colour', 'vibrant grape')" [ngClass]="{selected: states['colour'] === 'vibrant grape'}">
         <div class="option-colour-preview grape"></div>
-        <h4>Vibrant Grape</h4>
+        <h4>MED EVAC</h4>
       </div>
     </div>
   </ion-card>
@@ -107,29 +111,31 @@ limitations under the License.
     <h3 class="car-option" (click)="open('interior')">
       <img [hidden]="states['interior']" src="assets/circle_empty.svg">
       <img [hidden]="!states['interior']" src="assets/circle_tick.svg">
-      Interior
+      Food <p>
+        Task Worth : 900 Coins
+      </p>
       <span class="car-option-selected">{{states['interior']}}</span>
     </h3>
 
     <div class="option-interiors">
       <div class="option-interior" (click)="select('interior', 'red rum')" [ngClass]="{selected: states['interior'] === 'red rum'}">
         <div class="option-interior-preview red"></div>
-        <h4>Red Rum</h4>
+        <h4>Vegetarian</h4>
       </div>
 
       <div class="option-interior" (click)="select('interior', 'papyrus')" [ngClass]="{selected: states['interior'] === 'papyrus'}">
         <div class="option-interior-preview papyrus"></div>
-        <h4>Papyrus</h4>
+        <h4>Non-Vegetarian</h4>
       </div>
 
       <div class="option-interior" (click)="select('interior', 'rotor grey')" [ngClass]="{selected: states['interior'] === 'rotor grey'}">
         <div class="option-interior-preview grey"></div>
-        <h4>Rotor grey</h4>
+        <h4>Special Diet</h4>
       </div>
 
       <div class="option-interior" (click)="select('interior', 'noble brown')" [ngClass]="{selected: states['interior'] === 'noble brown'}">
         <div class="option-interior-preview brown"></div>
-        <h4>Noble Brown</h4>
+        <h4>Anything</h4>
       </div>
     </div>
   </ion-card>
@@ -138,16 +144,18 @@ limitations under the License.
     <h3 class="car-option" (click)="open('extras')">
       <img [hidden]="states['extras']" src="assets/circle_empty.svg">
       <img [hidden]="!states['extras']" src="assets/circle_tick.svg">
-      Extras
+      Rescue <p>
+        Task Worth : 7778 Coins
+      </p>
       <span class="car-option-selected">{{getExtras()}}</span>
     </h3>
 
     <div>
       <div class="option-item top-option-item" (click)="select('extras', 'extended warranty')">
         <div class="option-description">
-          <h2>Extended Warranty</h2>
+          <h2>Drone Rescue</h2>
           <p>
-            Total piece of mind for the perfect Arium motoring experience.
+            First Available Drone will be sent.
           </p>
         </div>
         <ion-badge [hidden]="containsExtra('extended warranty')" item-right color="dark">+£150</ion-badge>
@@ -156,9 +164,9 @@ limitations under the License.
 
       <div class="option-item" (click)="select('extras', 'tinted windows')">
         <div class="option-description">
-          <h2>Tinted Windows</h2>
+          <h2>SOS</h2>
           <p>
-            Stylish privacy and protection from the sun's rays.
+            System Recommended Best Rescue.
           </p>
         </div>
         <ion-badge [hidden]="containsExtra('tinted windows')" item-right color="dark">+£450</ion-badge>
